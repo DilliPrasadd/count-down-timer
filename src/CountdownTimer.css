@@ -1,0 +1,55 @@
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+   
+  .circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #eee;
+  }
+   
+  .mask {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+   
+  .full {
+    clip: rect(0, 200px, 200px, 100px);
+  }
+   
+  .half {
+    clip: rect(0, 100px, 200px, 0);
+  }
+   
+  .fill {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #3498db;
+    transform-origin: 100% 50%;
+    transition: transform 1s linear;
+  }
+   
+  .inside-circle {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .input-container{
+    position: absolute;
+    top: 50px;
+  }
